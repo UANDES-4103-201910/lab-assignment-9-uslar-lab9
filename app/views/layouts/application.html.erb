@@ -56,16 +56,16 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+  <ul class="collapse navbar-collapse" id="navbarsExampleDefault">
     <form class="form-inline my-2 my-lg-0">
       <% if user_signed_in? %>
-      <button class="btn btn-secondary my-2 my-sm-0" type="button"><%= link_to "Log in", destroy_user_session_path, method: :delete%></button>
+      <li><%= link_to "Logout", destroy_user_session_path, method: :delete%></li>
       <% else %>
-      <button class="btn btn-secondary my-2 my-sm-0" type="button"><%= link_to "Sign Up", new_user_registration_path%></button>
-      <button class="btn btn-secondary my-2 my-sm-0" type="button"><%= link_to "Log in", new_user_session_path%></button>
+      <li><%= link_to "Sign Up", new_user_registration_path %></li>
+      <li><%= link_to "Login", new_user_session_path %></li>
+	<% end %>
     </form>
-    <% end %>
-  </div>
+  </ul>
 </nav>
 
   	<p id="notice"><%= notice %></p>
