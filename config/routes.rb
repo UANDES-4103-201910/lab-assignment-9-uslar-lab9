@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'events/edit'
+  get 'events/index'
+  get 'events/new'
+  get 'events/show'
   resources :ticket_types
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
