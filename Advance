@@ -1,0 +1,2 @@
+Advance in the lab assignment with the cancancan methods, but for problems with the last assignment like generate the views for certains models can't be test in a good way the code, the controllers are create and some views, using the cancancan
+are upload some privilege for users and admins like if u are not log in, you only can see, but if you are loged in, you can edit or add.
