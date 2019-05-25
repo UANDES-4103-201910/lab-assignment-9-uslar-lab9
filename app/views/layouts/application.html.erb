@@ -51,6 +51,12 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <form class="form-inline my-6 my-lg-0">
+        <li><%= link_to "Create ticket", new_ticket_type_path %></li>
+        <li><%= link_to "See events", events_show_path %></li>
+        <li><%= link_to "Tickets", ticket_types_path %></li>
+
+      </form>
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
